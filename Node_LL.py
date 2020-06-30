@@ -16,6 +16,21 @@ class Linked_List:
     def insert_start(self,new):
         new.next = self.head
         self.head = new
+
+    def insert_end(self,new):
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = new
+
+    def insert_random(self, new, position):
+        temp = self.head
+        while temp.value != position:
+            temp = temp.next
+        new.next = temp.next
+        temp.next = new
+            
+        
         
         
         
