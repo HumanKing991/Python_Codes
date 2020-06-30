@@ -12,3 +12,10 @@ class Linked_List:
         while temp:
             print(temp.value)
             temp = temp.next
+
+    def insert_start(self,new):
+        new.next = self.head
+        self.head = new
+        
+        
+        
