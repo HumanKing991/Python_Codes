@@ -3,9 +3,12 @@ class Node:
         self.value = value
         self.next = None
 
-
 class Linked_List:
     def __init__(self):
         self.head = None
 
-
+    def Traverse(self):
+        temp = self.head
+        while temp:
+            print(temp.value)
+            temp = temp.next
